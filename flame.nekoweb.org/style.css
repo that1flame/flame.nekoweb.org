@@ -1,0 +1,126 @@
+/* Import Font(s) */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Set all text to use JetBrains Mono. Except the main header. */
+h2, h3, h4, h5, h6, p, li {
+	font-family: "JetBrains Mono";
+	color: white;
+	text-align: center;
+}
+
+/* Set text sizes */
+h1 {
+	font-family: "Jersey 10";
+	font-size: 144px;
+	text-align: center;
+	line-height: 0.5;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	
+	/* Gradient thingies */
+	background: linear-gradient(90deg, #ff0000, #ffaa00, #ff0000);
+	background-size: 200% auto;
+	color: white; /* Fallback for browsers that don't support background-clip */
+	background-clip: text;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 4s linear infinite;
+}
+
+h2 {
+	font-size: 36px;
+	margin-top: 5px;
+}
+
+/* Animates the h1 gradient (thanks to codeshack.io) */
+@keyframes gradient-flow {
+	0% {
+    	background-position: 0% center;
+  	}
+  	100% {
+    	background-position: 200% center;
+  	}
+}
+
+body {
+	background-image: url(https://flame.nekoweb.org/graphics/orange_forest.jpg); /* ignore the watermark on this bg pls */
+	/* These are used to make sure the background looks right regardless of window/display size. */
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-color: black;
+  	
+	width: auto;
+	height: auto;
+}
+
+/* Container for the whole page. Probably gonna need... */
+.container {
+	width: 1000px;
+	margin: auto; /* Centers the site apparently. Neat */
+}
+
+/* The box at the top of the page. Like a header/nav bar */
+.header {
+	width: 100%;
+	border: 2px solid white;
+	background-color: rgb(21, 21, 21);
+	margin-top: 100px;
+	margin-bottom: 12px;
+}
+
+/* The main content "box". Just holds the navbar & primary content for positioning */
+.main {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	gap: 12px;
+}
+
+.content {
+	height: auto;
+	width: 75%;
+	border: 2px solid white;
+	background-color: rgb(21, 21, 21);
+	padding: 10px;
+}
+
+.navbar {
+	height: auto;
+	width: 25%;
+	border: 2px solid white;
+	background-color: rgb(21, 21, 21);
+	padding: 10px;
+}
+
+.navbutton {
+	width: 98%;
+	display: inline-block;
+	border: 2px solid white;
+	background-color: black;
+	color: white;
+	font-family: 'JetBrains Mono';
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	padding: 12px 0px 12px 0px;
+	margin-bottom: 12px;
+	cursor: pointer;
+}
+
+.linkbutton {
+	width: 80%;
+	display: inline-block;
+	background-color: #505050;
+	color: white;
+	font-family: 'JetBrains Mono';
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 0px 10px 0px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 12px;
+	cursor: pointer;
+}
