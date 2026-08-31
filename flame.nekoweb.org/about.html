@@ -11,24 +11,13 @@
 <body>
 	<!-- This div contains all the content on the page. Simple.. I hope. -->
 	<div class="container">
-		<!-- The header of the page. Likely just a title & nav. -->
-		<div class="header">
-			<h1>FlameVR</h1>
-    		<p>Homepage of FlameVR (@that1flame), a content creator & newbie programmer trying his best.</p>
-		</div>
+		<!--# include file="innerParts/header.html" -->
+
 		<!-- The main content. Split into 2 columns -->
 		<div class="main">
-			<!-- The side navbar. Takes you to different content -->
-			<div class="navbar">
-				<h2><u>NAVIGATION</u></h2>
-				<a href="/home" class="navbutton">Home</a> <!-- This is just home.html. Everything else has a dedicated html file -->
-				<a href="/about" class="navbutton">About Me</a>
-				<a href="/links" class="navbutton">Links</a>
-				<a href="/projects" class="navbutton">Projects</a>
-				<a href="#" class="navbutton">Blog</a>
-			</div>
+			<!--# include file="innerParts/navbar.html" -->
 			
-			<!-- The primary content. You're on a "subpage", so while everything above is the same, the content below will change. -->
+			<!-- The primary content. Contains the actual text n stuff -->
 			<div class="content">
 				<p>Heyo! I'm Flame. I don't really know how to write these things, so... bear with me.</p>
 				<h3>My Experience</h3>
