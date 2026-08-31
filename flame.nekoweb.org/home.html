@@ -17,23 +17,11 @@ P.S. Comments with other names at the end are explanations from Nekoweb Discord 
 <body>
 	<!-- This div contains all the content on the page. Simple.. I hope. -->
 	<div class="container">
-		<!-- The header of the page. Likely just a title & nav. -->
-		 <!-- I'll be moving this to a separate file soon using Nekoweb's SSI. -->
-		<div class="header">
-			<h1>FlameVR</h1>
-    		<p>Homepage of FlameVR (@that1flame), a content creator & newbie programmer trying his best.</p>
-		</div>
+		<!--# include file="innerParts/header.html" -->
+
 		<!-- The main content. Split into 2 columns -->
 		<div class="main">
-			<!-- The side navbar. Takes you to different content -->
-			<div class="navbar">
-				<h2><u>NAVIGATION</u></h2>
-				<a href="/home" class="navbutton">Home</a> <!-- This is just home.html. Everything else has a dedicated html file -->
-				<a href="/about" class="navbutton">About Me</a>
-				<a href="/links" class="navbutton">Links</a>
-				<a href="/projects" class="navbutton">Projects</a>
-				<a href="#" class="navbutton">Blog</a>
-			</div>
+			<!--# include file="innerParts/navbar.html" -->
 			
 			<!-- The primary content. Contains the actual text n stuff -->
 			<div class="content">
@@ -41,6 +29,8 @@ P.S. Comments with other names at the end are explanations from Nekoweb Discord 
 				<p>New to the Indie Web.</p>
 				<p>This site will be updated occasionally. Probably either small changes or content additions.</p>
 				<p><a target="_blank" href="https://flamevr.atabook.org/">Guestbook?</a></p>
+				<br>
+				<p>Fun site statistics:<br>Views: <!--# views --><br>Followers:<!--# followers --></p>
 			</div>
 		</div>
 	</div>
