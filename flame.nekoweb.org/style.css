@@ -79,14 +79,11 @@ body {
 }
 
 .content {
-	display: flex;
-	flex-wrap: wrap;
 	height: auto;
 	width: 75%;
 	border: 2px solid white;
 	background-color: rgb(21, 21, 21);
 	padding: 10px;
-	justify-content: center;	
 }
 
 .navbar {
