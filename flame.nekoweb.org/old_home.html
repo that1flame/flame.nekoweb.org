@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<!-- Basically just tells site to use all known unicode -->
+    <meta charset="UTF-8">
+    <!-- Imports the styles from style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- What appears on the tab on the top of the browser (or side if you're weird) -->
+    <title>Flame's Homepage</title>
+    
+    <!-- Sets various styles for this page only, hence why <style> is utilized -->
+    <style>
+		body {
+  			background-image: url('https://flame.nekoweb.org/graphics/dumb_forest_bg.jpg');
+  			
+  			height: 100vh; /* makes sure that it takes up the whole screen vertically, so that the wrap div can be centered vertically - dingus */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin: 0; /* removes any extra height that might make the page scroll - dingus */
+		}
+		
+		/* These two SHOULD manage the brightness of the campfire. */
+		img {
+			width: 425px;
+  			transition: filter 0.25s ease;
+  			filter: brightness(70%);
+		}
+		
+		img:hover {
+  			filter: brightness(100%);
+		}
+		
+		/* Adjust text spacing from image */
+		p {
+			margin-top: 40px;
+			font-size: 1rem;
+		}
+		
+		.wrap {
+            margin: auto; /* centers it */
+            width: min-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+		
+		a {
+			text-align: center; /* The anchor tag (the a tag) is technically a text element, so that's why text-align: center works here! - dingus */
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Wraps the element into a neat "box" instead of whatever anchoring shit I was doing - dingus (not exact quote) -->
+	<div class="wrap">
+		<a href="https://flame.nekoweb.org/home">
+			<img src="https://flame.nekoweb.org/graphics/pixel_bonfire.png" alt="Picture of a Campfire">
+		</a>
+		<p>Welcome. Enter the campsite?</p>
+		<p style="color:red; margin-top:0px">WARNING: Unfinished</p>
+	</div>
+</body>
+
+</html>
