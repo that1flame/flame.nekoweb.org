@@ -8,6 +8,8 @@ h2, h3, h4, h5, h6, p, li {
 	font-family: "JetBrains Mono";
 	color: white;
 	text-align: center;
+	margin-bottom: 8px;
+	margin-top: 8px;
 }
 
 /* Set text sizes */
@@ -78,6 +80,7 @@ body {
 	gap: 12px;
 }
 
+/* The primary content box. Right side of the screen. */
 .content {
 	height: auto;
 	width: 75%;
@@ -86,6 +89,7 @@ body {
 	padding: 25px;
 }
 
+/* The navbar. Holds subpage links and sits on the left. */
 .navbar {
 	height: auto;
 	width: 25%;
@@ -115,13 +119,13 @@ body {
 	background-color: #505050;
 	color: white;
 	font-family: 'JetBrains Mono';
-	font-size: 14px;
+	font-size: 16px;
 	text-align: center;
 	text-decoration: none;
 	padding: 10px 0px 10px 0px;
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-bottom: 12px;
+	margin-bottom: 16px;
 	cursor: pointer;
 }
 

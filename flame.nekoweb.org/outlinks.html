@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<!-- Basically just tells site to use all known unicode -->
-    <meta charset="UTF-8">
-    <!-- Imports the styles from style.css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- What appears on the tab on the top of the browser (or side if you're weird) -->
-    <title>Flame's Homepage</title>
+	<meta charset="UTF-8">
+	<!-- Imports the styles from style.css -->
+	<link rel="stylesheet" href="style.css">
+	<!-- What appears on the tab on the top of the browser (or side if you're weird) -->
+	<title>Flame's Homepage</title>
 </head>
+
 <body>
 	<!-- This div contains all the content on the page. Simple.. I hope. -->
 	<div class="container">
@@ -16,13 +18,21 @@
 		<!-- The main content. Split into 2 columns -->
 		<div class="main">
 			<!--# include file="innerParts/navbar.html" -->
-			
+
 			<!-- The primary content. Contains the actual text n stuff -->
-			<div class="content">
+			<div class="content" style="display: flex; flex-wrap: wrap; justify-content: center;">
 				<p>You are on the "Outlinks" page. This is a work in progress.</p>
 				<p>This will feature other site buttons, webrings, and (probably) credits.</p>
+				<!-- My own site button. -->
+				<p>Grab my site button! (Hotlinking Allowed.. ig i have to clarify this)</p>
+				<div class="divbreaker"></div>
+				<a href="https://flame.nekoweb.org/home">
+					<img src="https://flame.nekoweb.org/graphics/flame_button.png">
+				</a>
+				<textarea id="sitebutton"><a href="https://flame.nekoweb.org/home"><img src="https://flame.nekoweb.org/graphics/flame_button.png"></a></textarea>
 			</div>
 		</div>
 	</div>
 </body>
+
 </html>

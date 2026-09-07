@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flame's Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Page Not Found</title>
+
+    <style>
+		body {
+  			background-color: #151515;
+            background-image: none;
+  			
+  			height: 100vh; /* makes sure that it takes up the whole screen vertically, so that the wrap div can be centered vertically - dingus */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin: 0; /* removes any extra height that might make the page scroll - dingus */
+		}
+		
+		/* Adjust text spacing from image */
+		p {
+			font-size: 1.5rem;
+            color: white;
+		}
+		
+		.wrap {
+            margin: auto; /* centers it */
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+	</style>
 </head>
 <body>
-    <p>Page not found.</p>
+    <div class="wrap">
+		<p>Page not found. <a href="https://flame.nekoweb.org">Back to home?</a></p>
+	</div>
 </body>
 </html>
