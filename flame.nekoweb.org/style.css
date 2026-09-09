@@ -31,18 +31,6 @@ h1 {
     animation: gradient-flow 4s linear infinite;
 }
 
-h2 {
-	font-size: 24px;
-	margin-top: 5px;
-	background-color: var(--main-color);
-	padding: 8px;
-}
-
-h3 {
-	margin-top: 24px;
-	margin-bottom: 12px;
-}
-
 /* Animates the h1 gradient (thanks to codeshack.io) */
 @keyframes gradient-flow {
 	0% {
@@ -51,6 +39,24 @@ h3 {
   	100% {
     	background-position: 200% center;
   	}
+}
+
+h2 {
+	font-size: 24px;
+	margin-top: 5px;
+	background-image: linear-gradient(90deg, var(--main-color), rgba(0, 0, 0, 0));
+	padding: 8px;
+}
+
+h3 {
+	margin-top: 24px;
+	margin-bottom: 12px;
+}
+
+/* Colors bold text, because why not? */
+strong {
+    color: var(--main-color);
+	text-shadow: 0px 0px /* <- Distance */ 8px /* <- Glow Radius */ var(--main-color) /* <- Glow Color */;
 }
 
 body {
@@ -65,11 +71,12 @@ body {
 }
 
 :root {
+	/* Basic Site Stuff */
 	--bg-color: rgb(21, 21, 21);
+	--main-color: rgb(212, 43, 43);
+	/* Borders */
 	--border-width: 2px;
 	--border-style: var(--border-width) solid grey;
-
-	--main-color: rgb(173, 43, 43);
 }
 
 /* Container for the whole page. Probably gonna need... */
@@ -133,13 +140,14 @@ body {
 }
 
 .navbutton:hover {
-	background-color: rgba(173, 43, 43, 0.5);
+	background-color: rgb(from var(--main-color) r g b / 60%);
 }
 
 .linkbutton {
 	width: 80%;
 	display: inline-block;
 	background-color: #505050;
+	border: 2px solid grey;
 	color: white;
 	font-family: 'JetBrains Mono';
 	font-size: 16px;
@@ -150,6 +158,11 @@ body {
 	margin-right: 10%;
 	margin-bottom: 16px;
 	cursor: pointer;
+	transition-duration: 0.25s;
+}
+
+.linkbutton:hover {
+	background-color: grey;
 }
 
 #sitebutton {
