@@ -183,6 +183,14 @@ body {
 	height: 0;
 }
 
+.buttoncollection {
+	padding: 5px;
+}
+
+.outlink {
+	margin: 0px 2px 0px 2px;
+}
+
 /* Resize site for phones */
 @media (max-width: 1000px) {
 	.container {
