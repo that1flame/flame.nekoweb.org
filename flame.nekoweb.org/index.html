@@ -3,7 +3,7 @@
 <!-- 
 Welcome to the source code, random internet user! I'm not sure why you'd be looking here, but here's something for you if you are.
 I like to leave comments for myself everywhere so I know what EVERYTHING does.. because I'm really forgetful.
-But that also means YOU can learn how some HTML lines work too! I hope you learn something by looking here <3  - FlameVR
+But that also means YOU can learn how some HTML lines work too! I hope you learn something by looking here <3  - Flame
 P.S. Comments with other names at the end are explanations from Nekoweb Discord members. Huge thanks to all of them!
 -->
 <head>
@@ -15,26 +15,26 @@ P.S. Comments with other names at the end are explanations from Nekoweb Discord 
     <title>Flame's Homepage</title>
 </head>
 <body>
+	<!-- The header. Either only my name or some sort of banner. -->
+	<!--# include file="innerParts/header.html" -->
+
 	<!-- This div contains all the content on the page. Simple.. I hope. -->
 	<div class="container">
-		<!--# include file="innerParts/header.html" -->
-
 		<!-- The main content. Split into 2 columns -->
-		<div class="main">
-			<!--# include file="innerParts/navbar.html" -->
+		<!-- First, the navbar on the left. -->
+		<!--# include file="innerParts/navbar.html" -->
 			
-			<!-- The primary content. Contains the actual text n stuff -->
-			<div class="content" style="display: flex; flex-wrap: wrap; justify-content: center;">
-				<h2 style="margin-bottom: 16px; background: none;">Welcome to my website!</h2>
-				<p>I'm <strong>Flame</strong>, typically seen as <i>'FlameVR'</i> or <i>'that1flame'</i> depending on the platform.</p>
-				<p>This is my "hub" on the internet, showcasing my various projects and other information about me. Updated somewhat regularly.	</p>
-				<p>If anything looks off here, it's becuase I'm new to HTML/CSS and this is my first website. If anything is REALLY off please let me know.</p>
-				<p>This site was made on Firefox on a 1920x1200 monitor, but should look fine on other displays.</p>	
-				<div class="divbreaker"></div>
-				<h3 style="margin-bottom: 0px">Fun Site Statistics (via Nekoweb):</h3>
-				<div class="divbreaker"></div>
-				<p>Views: <!--# views --><br>Followers: <!--# followers --></p>
-			</div>
+		<!-- The primary content. Contains the actual text n stuff -->
+		<div class="content">
+			<h2 style="margin-bottom: 16px; background: none;">Welcome to my website!</h2>
+			<p>I'm <strong>Flame</strong>, typically seen as <i>'FlameVR'</i> or <i>'that1flame'</i> depending on the platform.</p>
+			<p>This is my "hub" on the internet, showcasing my various projects and other information about me. Updated somewhat regularly.	</p>
+			<p>If anything looks off here, it's becuase I'm new to HTML/CSS and this is my first website. If anything is REALLY off please let me know.</p>
+			<p>This site was made on Firefox on a 1920x1200 monitor, but should look fine on other displays.</p>	
+			<div class="divbreaker"></div>
+			<h3 style="margin-bottom: 0px">Fun Site Statistics (via Nekoweb):</h3>
+			<div class="divbreaker"></div>
+			<p>Views: <!--# views --><br>Followers: <!--# followers --></p>
 		</div>
 	</div>
 </body>
