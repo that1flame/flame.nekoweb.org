@@ -16,6 +16,6 @@ jobs:
           uses: indiefellas/deploy2nekoweb@main
           with:
             nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
-            nekoweb-domain: 'flame.nekoweb.org'
+            nekoweb-domain: 'that1flame.com'
             nekoweb-username: 'flame'
-            directory: 'flame.nekoweb.org'
+            directory: 'that1flame.com'
