@@ -4,12 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* Set all text to use JetBrains Mono. Except the main header. */
-h2, h3, h4, h5, h6, p, li {
+h2, h3, h4, h5, h6, p, li, summary {
 	font-family: "JetBrains Mono";
 	color: white;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 8px;
 	margin-top: 8px;
+}
+
+/* Aligns h2 to center, becuase... yeah */
+h2 {
+	text-align: center;
+	box-sizing: border-box;
 }
 
 /* Set text sizes */
@@ -106,7 +112,7 @@ body {
 .content {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: left;
 	height: auto;
 	width: 75%;
 	border: var(--border-style);
