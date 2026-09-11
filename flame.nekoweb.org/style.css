@@ -13,7 +13,7 @@ h2, h3, h4, h5, h6, p, li, summary {
 }
 
 /* Aligns h2 to center, becuase... yeah */
-h2, h3 {
+h2 {
 	text-align: center;
 	box-sizing: border-box;
 }
